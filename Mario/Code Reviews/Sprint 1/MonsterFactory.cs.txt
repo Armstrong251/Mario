@@ -1,0 +1,9 @@
+﻿File: MonsterFactory.cs
+Author: NRider Osentoski
+Reviewer: Nate Turner
+Date: 9/23/2019 @ 10:00PM
+~10 mins
+
+Simple and easy to read
+Each mob is easily distinguishable
+Nothing I could do could make it better

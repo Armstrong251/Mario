@@ -1,0 +1,20 @@
+{
+    'Type': 'Level',
+    'Name': '3-1',
+	'Theme' : 'Space',
+    'NextLevel': 'Level10'
+}
+$
+{
+    'Type': 'Launcher',
+    'BulletType': 'BulletBill',
+	'X':'42',
+	'Y':'9'
+}
+$
+{
+    'Type': 'Launcher',
+    'BulletType': 'BulletBill',
+	'X':'129',
+	'Y':'13'
+}

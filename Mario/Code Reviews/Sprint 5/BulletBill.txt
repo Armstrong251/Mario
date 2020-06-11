@@ -1,0 +1,9 @@
+﻿Reviewed By: Zachary Mack
+Reviewed On: 11/26/2019
+Reviewing: Levels
+Author: Nick , Will 
+Time Taken: 10 minutes.
+
+The Bullet Bill class is a good basic class that sets up the bounding box of the bill and contains the basic behavior of destruction. 
+Stompable should likely have a default of true as stompable enemies tend to be more common than non stompable ones.
+The update methods of Turbo, Super, and Fake Bill all have code that has to do with the sprite homing, but they dont have the context

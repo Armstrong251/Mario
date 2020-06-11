@@ -1,0 +1,21 @@
+{
+    'Type': 'Level',
+    'Name': '3-2',
+	'Theme' : 'Space',
+    'NextLevel': 'Level11/Beginning'
+}
+$
+{
+    'Type': 'BLauncher',
+    'BulletType': 'FatBill',
+	'X':'6',
+	'Y':'11',
+	'Flip':'1'
+}
+$
+{
+    'Type': 'Launcher',
+    'BulletType': 'SuperBill',
+	'X':'65',
+	'Y':'8'
+}

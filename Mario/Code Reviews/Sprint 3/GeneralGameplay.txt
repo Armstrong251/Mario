@@ -1,0 +1,26 @@
+﻿Reviewed By: Rider Osentoski
+Reviewed on: October 29, 2019
+No specific file reviewed.
+No specific author.
+Time taken: 10 minutes
+
+
+This is less of a review of code and more of a review on how the game feels to play, which
+I feel is quite important, although none of these are too big a deal.
+
+Mario carries no momentum to his movement, stoping as soon as the key is released.
+This can feel a little weird and might make platforming too easy.
+
+Mario's jump is just a little bit high. Maybe lower it a tad. Maybe also implement differing
+jump heights based on button hold time. In particular, the jump off of enemies should be lower
+so it's more difficult to get the multistomp combo thing.
+
+Coins just come out of blocks, but they should be auto collected.
+
+In the second half of the level, everything's just a little bit too high.
+
+Mario immediately switching power-up states also feels weird. Should have some transition time.
+
+All blocks except used blocks should bounce. Right now, only bricks bounce.
+
+

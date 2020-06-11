@@ -1,0 +1,10 @@
+﻿File: MarioContext.cs
+Author: Nick Armstrong
+Reviewer: Zachary Mack
+Date: 2019-10-15
+
+1. You may want to move the default value of facing right to where it is declared instead of setting it in the constructor
+2. You may want to make an acceleration value later for starting movements.
+3. Good comment, helps clarify why the code is the way it is.
+
+~15 mins

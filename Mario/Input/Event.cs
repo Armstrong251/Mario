@@ -1,0 +1,39 @@
+namespace Mario.Input
+{
+    public enum GameEvent
+    {
+        QUIT,
+        QUESTION_BLOCK_HIT,
+        USED_BLOCK_HIT,
+        BRICK_BLOCK_HIT,
+        HIDDEN_BLOCK_HIT,
+        MOVE_LEFT,
+        MOVE_RIGHT,
+        JUMP,
+        CROUCH,
+        CROUCH_RELEASE,
+        STANDARD_MARIO,
+        SUPER_MARIO,
+        FIRE_MARIO,
+        DAMAGE,
+        BOUNDING,
+        FIREBALL,
+        RESET, 
+        MUTE,
+        START,
+        COINSCHEAT,
+        PAUSE,
+        CONTINUE,
+        INTERACT,
+        DISPLAY_DIALOGUE,
+        WARP,
+        STAR,
+    }
+    public enum KeyEvent
+    {
+        KEY_DOWN,
+        KEY_HELD,
+        KEY_UP,
+        NONE,
+    }
+}

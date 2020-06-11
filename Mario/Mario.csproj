@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7390E02F-A102-4B98-932B-1B4DF6CD5AB9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mario</RootNamespace>
+    <AssemblyName>Mario</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>CA1014; CA2213; CA1814; CA2225;</NoWarn>
+    <LangVersion>7.3</LangVersion>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundLayer.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Collisions\Collider.cs" />
+    <Compile Include="Entities\Avatar\Avatar.cs" />
+    <Compile Include="Entities\Avatar\Body.cs" />
+    <Compile Include="Entities\Avatar\Ass.cs" />
+    <Compile Include="Entities\Avatar\Head.cs" />
+    <Compile Include="Entities\Avatar\LeftArm.cs" />
+    <Compile Include="Entities\Avatar\RightArm.cs" />
+    <Compile Include="Entities\Avatar\LeftLeg.cs" />
+    <Compile Include="Entities\Avatar\RightLeg.cs" />
+    <Compile Include="Entities\Block\BlockEntity.cs" />
+    <Compile Include="Entities\Block\BlockFactory.cs" />
+    <Compile Include="Entities\Block\FlagStates.cs" />
+    <Compile Include="Entities\Block\HazardBlocks.cs" />
+    <Compile Include="Entities\Bounds.cs" />
+    <Compile Include="Entities\Checkpoint.cs" />
+    <Compile Include="Entities\CheckpointFactory.cs" />
+    <Compile Include="Entities\Commands\CombineCommand.cs" />
+    <Compile Include="Entities\DialogueBox.cs" />
+    <Compile Include="Entities\Commands\Conditions\CommandCondition.cs" />
+    <Compile Include="Entities\Commands\Conditions\NullCondition.cs" />
+    <Compile Include="Entities\Commands\Conditions\Repeat.cs" />
+    <Compile Include="Entities\Commands\Conditions\Until.cs" />
+    <Compile Include="Entities\Commands\Message.cs" />
+    <Compile Include="Entities\Commands\MethodCall.cs" />
+    <Compile Include="Entities\Commands\SetSprite.cs" />
+    <Compile Include="Entities\Commands\Wait.cs" />
+    <Compile Include="Entities\EntityFactory.cs" />
+    <Compile Include="Entities\Factory.cs" />
+    <Compile Include="Entities\Commands\CollisionCue.cs" />
+    <Compile Include="Entities\Commands\CommandComponent.cs" />
+    <Compile Include="Entities\Commands\ICommand.cs" />
+    <Compile Include="Entities\Commands\Invincibility.cs" />
+    <Compile Include="Entities\Commands\Move.cs" />
+    <Compile Include="Entities\Hazzard\Fireball.cs" />
+    <Compile Include="Entities\Hazzard\Hammer.cs" />
+    <Compile Include="Entities\Hazzard\HazzardEntity.cs" />
+    <Compile Include="Entities\Hazzard\HazzardFactory.cs" />
+    <Compile Include="Entities\InvisibleWall.cs" />
+    <Compile Include="Entities\Items\FireFlower.cs" />
+    <Compile Include="Entities\Items\ItemEntity.cs" />
+    <Compile Include="Entities\Items\ItemFactory.cs" />
+    <Compile Include="Entities\Items\Star.cs" />
+    <Compile Include="Entities\Items\Coin.cs" />
+    <Compile Include="Entities\Items\LifeMushroom.cs" />
+    <Compile Include="Entities\KillBox.cs" />
+    <Compile Include="Entities\Mario\StarState.cs" />
+    <Compile Include="Entities\mobs\Boo.cs" />
+    <Compile Include="Entities\mobs\bowser\BowserState.cs" />
+    <Compile Include="Entities\Hazzard\Bowserfire.cs" />
+    <Compile Include="Entities\mobs\BulletBill\BulletBill.cs" />
+    <Compile Include="Entities\mobs\BulletBill\FakeBill.cs" />
+    <Compile Include="Entities\mobs\BulletBill\Fatbill.cs" />
+    <Compile Include="Entities\mobs\BulletBill\Superbill.cs" />
+    <Compile Include="Entities\mobs\BulletBill\TurboBill.cs" />
+    <Compile Include="Entities\mobs\bowser\Bowser.cs" />
+    <Compile Include="Entities\mobs\HammerBro\BroState.cs" />
+    <Compile Include="Entities\mobs\HammerBro\HammerBro.cs" />
+    <Compile Include="Entities\mobs\Koopa\FlyingKoopa.cs" />
+    <Compile Include="Entities\mobs\Koopa\Koopa.cs" />
+    <Compile Include="Entities\mobs\Koopa\KoopaState.cs" />
+    <Compile Include="Entities\mobs\MonsterEntity.cs" />
+    <Compile Include="Entities\mobs\MonsterFactory.cs" />
+    <Compile Include="Entities\mobs\Lakitu.cs" />
+    <Compile Include="Entities\mobs\Spiny.cs" />
+    <Compile Include="Entities\mobs\Goomba.cs" />
+    <Compile Include="Entities\mobs\PiranhaPlant.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\IState.cs" />
+    <Compile Include="Entities\Mario\ActionState.cs" />
+    <Compile Include="Entities\Mario\ActionStates.cs" />
+    <Compile Include="Entities\Mario\PowerUpState.cs" />
+    <Compile Include="Entities\Mario\MarioFactory.cs" />
+    <Compile Include="Entities\Mario\PowerUpStates.cs" />
+    <Compile Include="Entities\NullSprite.cs" />
+    <Compile Include="Entities\PhysicsComponent.cs" />
+    <Compile Include="Entities\Points.cs" />
+    <Compile Include="Entities\PointsFactory.cs" />
+    <Compile Include="Entities\StateList.cs" />
+    <Compile Include="Entities\Items\SuperMushroom.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="HUD.cs" />
+    <Compile Include="Levels\GameOver.cs" />
+    <Compile Include="Levels\ILevel.cs" />
+    <Compile Include="Levels\LevelFactory.cs" />
+    <Compile Include="Levels\Levels\Level2Beginning.cs" />
+    <Compile Include="Levels\Theme.cs" />
+    <Compile Include="Levels\StartScreen.cs" />
+    <Compile Include="Levels\Layer.cs" />
+    <Compile Include="Levels\LevelProperties.cs" />
+    <Compile Include="Levels\LevelReader.cs" />
+    <Compile Include="Levels\Level.cs" />
+    <Compile Include="Levels\Map.cs" />
+    <Compile Include="Levels\TestTransition.cs" />
+    <Compile Include="Levels\Transition.cs" />
+    <Compile Include="MarioGame.cs" />
+    <Compile Include="Input\Controller.cs" />
+    <Compile Include="Input\ControllerManager.cs" />
+    <Compile Include="Input\Event.cs" />
+    <Compile Include="Input\Gamepad.cs" />
+    <Compile Include="Input\IController.cs" />
+    <Compile Include="Input\IEventObserver.cs" />
+    <Compile Include="Input\Keyboard.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Block\BlockStates.cs" />
+    <Compile Include="Entities\Block\IBlockState.cs" />
+    <Compile Include="Entities\IEntity.cs" />
+    <Compile Include="Entities\Mario\MarioContext.cs" />
+    <Compile Include="Entities\Mario\MarioState.cs" />
+    <Compile Include="Entities\Sprite.cs" />
+    <Compile Include="Entities\ISpriteFactory.cs" />
+    <Compile Include="Utils\MusicPlayer.cs" />
+    <Compile Include="Utils\PointExt.cs" />
+    <Compile Include="Utils\RectangleExt.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Code Reviews\Sprint 1\Controller.cs.txt" />
+    <Content Include="Code Reviews\Sprint 1\ItemFactory.cs.txt" />
+    <Content Include="Code Reviews\Sprint 1\MarioFactoryReview.txt" />
+    <Content Include="Code Reviews\Sprint 1\MarioStates.cs.txt" />
+    <Content Include="Code Reviews\Sprint 1\MonsterFactory.cs.txt" />
+    <Content Include="Code Reviews\Sprint 1\SpriteFactory.cs.txt" />
+    <Content Include="Code Reviews\Sprint 1\BlockStates.cs.txt" />
+    <Content Include="Code Reviews\Sprint 2\Collider.cs.txt" />
+    <Content Include="Code Reviews\Sprint 2\Everything.txt" />
+    <Content Include="Code Reviews\Sprint 2\level.cs.txt" />
+    <Content Include="Code Reviews\Sprint 2\LevelReader.cs.txt" />
+    <Content Include="Code Reviews\Sprint 2\MarioContext.cs.txt" />
+    <Content Include="Code Reviews\Sprint 3\BackgroundLayer.cs.txt" />
+    <Content Include="Code Reviews\Sprint 3\Camera.txt" />
+    <Content Include="Code Reviews\Sprint 3\GeneralGameplay.txt" />
+    <Content Include="Code Reviews\Sprint 3\Invincibility.cs.txt" />
+    <Content Include="Code Reviews\Sprint 3\Map.cs.txt" />
+    <Content Include="Code Reviews\Sprint 4\BlockFactory.cs.txt" />
+    <Content Include="Code Reviews\Sprint 4\HUD.cs.txt" />
+    <Content Include="Code Reviews\Sprint 4\MarioGame.cs.txt" />
+    <Content Include="Code Reviews\Sprint 4\Theme.cs.txt" />
+    <Content Include="Code Reviews\Sprint 4\TransitionStuff.txt" />
+    <Content Include="Code Reviews\Sprint 5\Bowser.txt" />
+    <Content Include="Code Reviews\Sprint 5\BulletBill.txt" />
+    <Content Include="Code Reviews\Sprint 5\HammerBros.txt" />
+    <Content Include="Content\Levels\Level10\Background.png" />
+    <Content Include="Content\Levels\Level10\BlockMap.png" />
+    <Content Include="Content\Levels\Level10\CPMap.png" />
+    <Content Include="Content\Levels\Level10\EnemyMap.png" />
+    <Content Include="Content\Levels\Level10\Properties.txt" />
+    <Content Include="Content\Levels\Level10\SpawnMap.png" />
+    <Content Include="Content\Levels\Level11\Background.png" />
+    <Content Include="Content\Levels\Level11\Beginning\BlockMap.png" />
+    <Content Include="Content\Levels\Level11\Beginning\Properties.txt" />
+    <Content Include="Content\Levels\Level11\Beginning\SpawnMap.png" />
+    <Content Include="Content\Levels\Level11\BlockMap.png" />
+    <Content Include="Content\Levels\Level11\CPMap.png" />
+    <Content Include="Content\Levels\Level11\End\BlockMap.png" />
+    <Content Include="Content\Levels\Level11\End\Properties.txt" />
+    <Content Include="Content\Levels\Level11\End\SpawnMap.png" />
+    <Content Include="Content\Levels\Level11\EnemyMap.png" />
+    <Content Include="Content\Levels\Level11\Properties.txt" />
+    <Content Include="Content\Levels\Level11\SpawnMap.png" />
+    <Content Include="Content\Levels\Level12\Background.png" />
+    <Content Include="Content\Levels\Level12\BlockMap.png" />
+    <Content Include="Content\Levels\Level12\CPMap.png" />
+    <Content Include="Content\Levels\Level12\EnemyMap.png" />
+    <Content Include="Content\Levels\Level12\Properties.txt" />
+    <Content Include="Content\Levels\Level12\SpawnMap.png" />
+    <Content Include="Content\Levels\Level1PipeRoom\BlockMap.png" />
+    <Content Include="Content\Levels\Level1PipeRoom\CheckpointMap.png" />
+    <Content Include="Content\Levels\Level1PipeRoom\CPMap.png" />
+    <Content Include="Content\Levels\Level1PipeRoom\EnemyMap.png" />
+    <Content Include="Content\Levels\Level1PipeRoom\Properties.txt" />
+    <Content Include="Content\Levels\Level1PipeRoom\SpawnMap.png" />
+    <Content Include="Content\Levels\Level1\BlockMap.png" />
+    <Content Include="Content\Levels\Level1\CheckpointMap.png" />
+    <Content Include="Content\Levels\Level1\CPMap.png" />
+    <Content Include="Content\Levels\Level1\EnemyMap.png" />
+    <Content Include="Content\Levels\HowToEditMapInput.txt" />
+    <Content Include="Content\Levels\Level1\PipeRoom\BlockMap.png" />
+    <Content Include="Content\Levels\Level1\PipeRoom\CPMap.png" />
+    <Content Include="Content\Levels\Level1\PipeRoom\Properties.txt" />
+    <Content Include="Content\Levels\Level1\PipeRoom\SpawnMap.png" />
+    <Content Include="Content\Levels\Level1\Properties.txt" />
+    <Content Include="Content\Levels\Level1\SpawnMap.png" />
+    <Content Include="Content\Levels\Level1\TestLevel.png" />
+    <Content Include="Content\Levels\Level2\Beginning\BlockMap.png" />
+    <Content Include="Content\Levels\Level2\Beginning\Properties.txt" />
+    <Content Include="Content\Levels\Level2\Beginning\SpawnMap.png" />
+    <Content Include="Content\Levels\Level2\BlockMap.png" />
+    <Content Include="Content\Levels\Level2\CheckpointMap.png" />
+    <Content Include="Content\Levels\Level2\CPMap.png" />
+    <Content Include="Content\Levels\Level2\End\BlockMap.png" />
+    <Content Include="Content\Levels\Level2\End\Properties.txt" />
+    <Content Include="Content\Levels\Level2\End\SpawnMap.png" />
+    <Content Include="Content\Levels\Level2\EnemyMap.png" />
+    <Content Include="Content\Levels\Level2\PipeRoom\BlockMap.png" />
+    <Content Include="Content\Levels\Level2\PipeRoom\CPMap.png" />
+    <Content Include="Content\Levels\Level2\PipeRoom\Properties.txt" />
+    <Content Include="Content\Levels\Level2\PipeRoom\SpawnMap.png" />
+    <Content Include="Content\Levels\Level2\Properties.txt" />
+    <Content Include="Content\Levels\Level2\SpawnMap.png" />
+    <Content Include="Content\Levels\Level3\Background.png" />
+    <Content Include="Content\Levels\Level3\BlockMap.png" />
+    <Content Include="Content\Levels\Level3\CPMap.png" />
+    <Content Include="Content\Levels\Level3\EnemyMap.png" />
+    <Content Include="Content\Levels\Level3\Properties.txt" />
+    <Content Include="Content\Levels\Level3\SpawnMap.png" />
+    <Content Include="Content\Levels\Level4\Background.png" />
+    <Content Include="Content\Levels\Level4\BlockMap.png" />
+    <Content Include="Content\Levels\Level4\CPMap.png" />
+    <Content Include="Content\Levels\Level4\EnemyMap.png" />
+    <Content Include="Content\Levels\Level4\Properties.txt" />
+    <Content Include="Content\Levels\Level4\SpawnMap.png" />
+    <Content Include="Content\Levels\Level5\BlockMap.png" />
+    <Content Include="Content\Levels\Level5\CPMap.png" />
+    <Content Include="Content\Levels\Level5\EnemyMap.png" />
+    <Content Include="Content\Levels\Level5\Properties.txt" />
+    <Content Include="Content\Levels\Level5\SpawnMap.png" />
+    <Content Include="Content\Levels\Level6\BlockMap.png" />
+    <Content Include="Content\Levels\Level6\CPMap.png" />
+    <Content Include="Content\Levels\Level6\EnemyMap.png" />
+    <Content Include="Content\Levels\Level6\Properties.txt" />
+    <Content Include="Content\Levels\Level6\SpawnMap.png" />
+    <Content Include="Content\Levels\Level7\Background.png" />
+    <Content Include="Content\Levels\Level7\Beginning\Background.png" />
+    <Content Include="Content\Levels\Level7\Beginning\BlockMap.png" />
+    <Content Include="Content\Levels\Level7\Beginning\CPMap.png" />
+    <Content Include="Content\Levels\Level7\Beginning\EnemyMap.png" />
+    <Content Include="Content\Levels\Level7\Beginning\Properties.txt" />
+    <Content Include="Content\Levels\Level7\Properties.txt" />
+    <Content Include="Content\Levels\Level7\Beginning\SpawnMap.png" />
+    <Content Include="Content\Levels\Level7\BlockMap.png" />
+    <Content Include="Content\Levels\Level7\CPMap.png" />
+    <Content Include="Content\Levels\Level7\End\BlockMap.png" />
+    <Content Include="Content\Levels\Level7\End\Properties.txt" />
+    <Content Include="Content\Levels\Level7\End\SpawnMap.png" />
+    <Content Include="Content\Levels\Level7\EnemyMap.png" />
+    <Content Include="Content\Levels\Level7\SpawnMap.png" />
+    <Content Include="Content\Levels\Level8\Background.png" />
+    <Content Include="Content\Levels\Level8\BlockMap.png" />
+    <Content Include="Content\Levels\Level8\CPMap.png" />
+    <Content Include="Content\Levels\Level8\EnemyMap.png" />
+    <Content Include="Content\Levels\Level8\Properties.txt" />
+    <Content Include="Content\Levels\Level8\SpawnMap.png" />
+    <Content Include="Content\Levels\Level9\Background.png" />
+    <Content Include="Content\Levels\Level9\BlockMap.png" />
+    <Content Include="Content\Levels\Level9\CPMap.png" />
+    <Content Include="Content\Levels\Level9\EnemyMap.png" />
+    <Content Include="Content\Levels\Level9\Properties.txt" />
+    <Content Include="Content\Levels\Level9\SpawnMap.png" />
+    <Content Include="Content\Music\galaxystep.mp3" />
+    <Content Include="Content\Music\MainSong.mp3" />
+    <Content Include="Content\SoundEffects\1-Down.mp3" />
+    <Content Include="Content\SoundEffects\1-Up.mp3" />
+    <Content Include="Content\SoundEffects\breakblock.wav" />
+    <Content Include="Content\SoundEffects\bump.wav" />
+    <Content Include="Content\SoundEffects\coin.wav" />
+    <Content Include="Content\SoundEffects\fireball.wav" />
+    <Content Include="Content\SoundEffects\flagpole.wav" />
+    <Content Include="Content\SoundEffects\GameOver.mp3" />
+    <Content Include="Content\SoundEffects\Hurry.mp3" />
+    <Content Include="Content\SoundEffects\jump-small.wav" />
+    <Content Include="Content\SoundEffects\jump-super.wav" />
+    <Content Include="Content\SoundEffects\pause.wav" />
+    <Content Include="Content\SoundEffects\pipe.wav" />
+    <Content Include="Content\SoundEffects\powerup.wav" />
+    <Content Include="Content\SoundEffects\powerup_appears.wav" />
+    <Content Include="Content\SoundEffects\start.wav" />
+    <Content Include="Content\SoundEffects\stomp.wav" />
+    <Content Include="Content\SoundEffects\WorldClear.mp3" />
+    <Content Include="Content\Sprites\AdditionalItems.png" />
+    <Content Include="Content\Sprites\Blank.png" />
+    <Content Include="Content\Sprites\blocksSheet.png" />
+    <Content Include="Content\Sprites\BulletShooter.png" />
+    <Content Include="Content\Sprites\enemiesSheet.png" />
+    <Content Include="Content\Sprites\Enimies2.png" />
+    <Content Include="Content\Sprites\itemsSheet.png" />
+    <Content Include="Content\Sprites\MarioFace.png" />
+    <Content Include="Content\Sprites\marioSheet.png" />
+    <Content Include="Content\Sprites\marioSheet2.png" />
+    <Content Include="Content\Sprites\marioSheet3.png" />
+    <Content Include="Content\Sprites\moonEnemiesSheet.png" />
+    <Content Include="Content\Sprites\MovingPlatformSmall.png" />
+    <Content Include="Content\Sprites\PipesandBlocks.png" />
+    <Content Include="Content\Sprites\Castle.png" />
+    <Content Include="Content\Sprites\SpaceBackground.png" />
+    <Content Include="Content\Sprites\TextBox.png" />
+    <Content Include="Icon.ico" />
+    <Content Include="README.txt" />
+    <Content Include="Controls.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+    <None Include="Content\Fami-Sans-Bold.otf" />
+    <None Include="Content\Levels\Level10\Level10.xcf" />
+    <None Include="Content\Levels\Level11\Level11.xcf" />
+    <None Include="Content\Levels\Level12\Level12.xcf" />
+    <None Include="Content\Levels\Level3\Map.xcf" />
+    <None Include="Content\Levels\Level4\Map.xcf" />
+    <None Include="Content\Levels\Level5\Map.xcf" />
+    <None Include="Content\Levels\Level7\Beginning\Level7Beginning.xcf" />
+    <None Include="Content\Levels\Level7\Level7.xcf" />
+    <None Include="Content\Levels\Level8\Map.xcf" />
+    <None Include="Content\Levels\Level9\Level9.xcf" />
+    <None Include="Content\MarioFont.spritefont" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\obj\" />
+    <Folder Include="Content\Sprites\Points\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

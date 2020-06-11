@@ -1,0 +1,6 @@
+File: Camera.cs
+Author: Rider Osentoski
+Reviewer: Willem Kennedy
+Date: 2019-10-28
+
+The Camera class is implemented in MarioGame.cs in a way where Camera.Zoom does not appear to affect anything and I could not figure out why that was by looking at it.

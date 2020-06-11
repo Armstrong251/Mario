@@ -1,0 +1,12 @@
+﻿Author: Willem Kennedy and Rider Osentoski
+Reviewer: Nate Turner
+Date: 11/26/2019
+Time Spent: 
+
+Unique mob(s)that throws projectiles similar to Mario fireballs
+Mob(s) are able to navigate between platforms, and target Mario
+Launches hammer at a specific velocity, looking at Mario at the current time as a target
+Random AI to determine jumping or running
+
+Overall clean code that is easy to read
+

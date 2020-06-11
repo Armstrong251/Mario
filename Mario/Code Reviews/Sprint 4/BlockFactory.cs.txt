@@ -1,0 +1,15 @@
+Reviewer: Willem Kennedy
+File: BlockFactory.cs
+Author: Zachary Mack
+Date: 2019-11-12
+
+The way that themes are implemented right now results in a lot of extra code compared to what I feel is strictly necessary.
+
+The fact that all of the cases are duplicated and the new locations of things are manually calculated means that there's a lot of code.
+
+Possible ways to remedy this:
+    * Have each theme be an integer offset - for instance, the overworld brick block and the cave brick block are exactly 64 pixels apart, 
+            the overworld and cave used block are also 64 pixels apart, etc
+    * Have each theme be a separate file where all the coordinates are the same
+
+As it is now, it's a bit hard to read.

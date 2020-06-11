@@ -1,0 +1,25 @@
+{
+    'Type': 'Level',
+    'Name': '1-2',
+    'Theme' : 'Cave',
+    'NextLevel': 'Level2/End'
+}
+$
+{
+    'Type': 'Pipe',
+    'Destination': 'Level2/End',
+    'Return': false,
+    'X': 166,
+    'Y': 13,
+    'DestX': 3,
+    'DestY': 16
+}
+$
+{
+    'Type': 'Pipe',
+    'Destination': 'Level2/PipeRoom',
+    'X': 103,
+    'Y': 15,
+    'DestX': 0,
+    'DestY': 0
+}

@@ -1,0 +1,20 @@
+﻿File: MarioStates.cs
+Author: Zachary Mack
+Reviewer: Willem Kennedy
+
+1 - facingRight should be a part of MarioContext since it's state-independent
+
+2 - Since Mario will never need 2 of the same state, all the states can be in a static factory
+	to avoid having to make a new one each time
+
+2.5 - Look at what Rider did for block states in Block.cs
+
+3 - alternatively for point 2: instantiation might be good because it lets a state know when it starts
+
+4 - animations should go in a factory class
+
+5 - it's a pretty large file and it's only going to get larger, consider splitting it up
+
+6 - There's ways to make it so that crouching state/jumping state are separate from power-up state
+	so that you don't have to have a separate class for each permutation - consider doing that
+	to avoid code reuse.

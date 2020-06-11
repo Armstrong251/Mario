@@ -1,0 +1,16 @@
+﻿{
+    'Type': 'Level',
+    'Name': '2-4',
+    'Theme': 'DarkPlains',
+    'NextLevel': 'Level7'
+}
+$
+{
+    'Type': 'Pipe',
+    'Destination': 'Level7',
+    'Return': false,
+    'X': 42,
+    'Y': 17,
+    'DestX': 1,
+    'DestY': 16
+}

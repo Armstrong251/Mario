@@ -1,0 +1,9 @@
+﻿File: MarioContext.cs
+Author: Willem Kennedy
+Reviewer: Zachary Mack
+Date: 2019-10-15
+
+1. The Item Entity has only one size for the bounding box which could be a problem if an item is smaller. (Some games have a tiny shroom)
+2. Otherwise looks pretty good, update isnt used but it is needed to implement entity.
+
+~10 mins

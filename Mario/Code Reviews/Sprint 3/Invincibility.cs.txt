@@ -1,0 +1,8 @@
+﻿FILE: Invincibility.cs
+AUTHOR: Willem Kennedy
+REVIEWER: Nate Turner
+DATE: 10/28/2019
+TIME ELAPSED: ~20min
+
+Code is simple and easy to read. I understand what happens with every single if statement
+Can't say I could make this code more simple

@@ -1,0 +1,12 @@
+File: level.cs.txt
+Author: Willem Kennedy
+Reviewer: Nick Armstrong
+Date: 10/15/2019
+
+Overall I think the code is rather clean. It seems 
+short and simple since it is the top of the hirearchy excluding the main game. 
+The only thing I would change is by adding comments to explain what things do 
+instead of haveing to open all the diffrent files. I have noticed this with all the code mine included. 
+It just seems require more time to sort through everything. 
+
+~ 20 min 

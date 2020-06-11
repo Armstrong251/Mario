@@ -1,0 +1,13 @@
+{
+    'Type': 'Level',
+    'Name': '1-3',
+    'Theme': 'Plains',
+    'NextLevel': 'Level4'
+}
+$
+{
+    'Type': 'Castle',
+    'X': 0,
+    'Y': 10,
+    'AtBeginning': true
+}

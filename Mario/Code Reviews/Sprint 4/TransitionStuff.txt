@@ -1,0 +1,10 @@
+FILE: GameOver.cs, StartScreen
+AUTHOR: Rider, Nick, Zach, Will
+REVIEWER: Nick
+DATE: 11/12/2019
+TIME ELAPSED: ~20min
+
+I found that the classes within the 2 files do preform the intended tasks. I would make some refactoring changes in the future thoug
+Overall I think the start screen should be formated so it works with any screen size. This will allow a full screen implimentation. 
+The transitions in Game over seem to be working properly. The code overall seems rather clean and consise. We should change the name of the file 
+GameOver.cs to maybe flashScreens.cs to encourperate all screeens used in transitions.

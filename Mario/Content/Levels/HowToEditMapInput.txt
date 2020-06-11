@@ -1,0 +1,93 @@
+﻿Author: Zachary Mack
+
+How to Edit the Map
+
+The contents of the map displayed, during the game are created through the information provided in four files.
+Below are the descriptions of what each file does.
+All the files should be the same dimensions. If they are not the same dimensions there will be issues.
+I suggest using an image editing software that provides layers, to easily line up the images and ensure they are the same size.
+Create a base layer that is white.
+Create 4 layers 1 for each future png file.
+Edit those layers to create the map you want.
+After checking that it is correct export the image.
+
+All of the available colors for the pictures are provided below. 
+While white is preferred for air any color not listed in the sections below is read in, it will also be displayed as air.
+
+WHITE = RGB(255, 255, 255)
+RED = RGB(255, 0, 0)
+ORANGE = RGB(255, 135, 0)
+YELLOW = RGB(255, 255, 0)
+BROWN = RGB(200, 135, 75)
+CYAN = RGB(0, 255, 255)
+GREEN = RGB(0, 255, 0)
+BLACK = RGB(0, 0, 0)
+
+
+BlockMap.png
+Contains the locations of all the blocks at the start of the game.
+WHITE = air
+RED = floor
+ORANGE = pyramid/stair
+YELLOW = Question
+BROWN = Brick
+CYAN = Hidden
+BLACK = Used
+[GREEN] = States.PipeVert,
+[DARKGREEN] = States.PipeTop,
+[GREENYELLOW] = States.Flagpole,
+[DARKGREENYELLOW] = States.FlagCap,
+[DARKGREENH] = States.PipeHoriz,
+[DARKGREENHE] = States.PipeSide,
+[GREENWHITE] = States.Flag,
+[DARKDARKGREEN] = States.PipeJoint,
+[PURPLE] = States.Castle,
+[LIGHTGREY] = States.BulletLauncher,
+[DARKGREY] = States.BanzaiLauncher,
+[GREY] = States.BigBrick,
+[PINK] = States.Firebar,
+[BLURPLE] = States.Platform,
+[TAN] = States.SmallBridge,
+[TURQ] = States.LavaTop,
+[GREENTURQ] = States.LavaBottom,
+[SATURPURP] = States.Axe,
+[DARKRED] = States.BossPlatformFull,
+[VERYDARKRED] = States.BossPlatformSmall,
+[LAVENDER] = States.Toad,
+[YELLOWORANGE] = States.Dirt,
+
+SpawnMap.png
+Contains where Mario will spawn and in the future potentially checkpoints.
+BLACK = Start for Mario
+
+EnemyMap.png
+Contains the locations of the enemies at the start of the game.
+
+[BROWN] = Mobs.goomba,
+[GREEN] = Mobs.greenKoopa,
+[GREENWHITE] = Mobs.GreenFlyingKoopa,
+[RED] = Mobs.redKoopa,
+[REDWHITE] = Mobs.RedFlyingKoopa,
+[PINK] = Mobs.PiranhaPlant,
+[DARKGREY] = Mobs.FatBill,
+[OFFWHITE] = Mobs.BooHiddn,
+[DARKGREEN]= Mobs.Bowser,
+[DARKGREENH] = Mobs.AIBowser,
+[GREENYELLOW] = Mobs.HammerBro,
+[CYAN] = Mobs.Lakitu,
+
+CPMap.png
+Contains the locations of the coins and power ups at the start of the game.
+WHITE = air
+ORANGE = fire flower
+RED = super mushroom
+GREEN = one up mushroom
+CYAN = star
+YELLOW = coin in air
+For in blocks the power ups are the same, but the number of coins is determined by its B value 
+R and G values are set to 255.
+255 255 0 is 10
+255 255 180 is 1
+255 255 160 is 2
+255 255 140 is 3 ect.
+Neither power ups or coins in blocks has been implemented, because those were not neccessary for this sprint.

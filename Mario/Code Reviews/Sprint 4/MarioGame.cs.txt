@@ -1,0 +1,11 @@
+Reviewer: Zachary Mack
+Author: Willem Kennedy, Nick Armstrong, and Rider Osentoski
+Date: 11/12/2019
+Time Taken: ~20 min
+
+Having the levels as a stack is problematic if you want to exit a bonus room and then later want to return to the bonus room. It would probably be better to store the levels in
+a map and make new entries as the you enter the levels keeping the level data for as long as the player can still access the area. Additionally InitThemes will get very long, 
+if in future levels we want to add other backgrounds with paralax. Maybe make a method to get that layer instead so the method doesn't get cluttered. The loading of the sound
+effects should be placed in a seperate method outside of load content which should be called in load content to reduce the clutter in the method. If we use a lot more fonts
+then we will need to do something similar for those. Also the UI Elements, should probably be seperated out as well. Good comments though, and the class works as intended.
+It could probably just use some clean up.

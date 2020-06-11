@@ -1,0 +1,14 @@
+﻿{
+    'Type': 'Level',
+    'Name': '1-1',
+    'NextLevel': 'Level2/Beginning'
+}
+$
+{
+    'Type': 'Pipe',
+    'Destination': 'Level1/PipeRoom',
+    'X': 58,
+    'Y': 14,
+    'DestX': 0,
+    'DestY': 0
+}

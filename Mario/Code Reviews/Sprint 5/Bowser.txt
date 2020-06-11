@@ -1,0 +1,23 @@
+﻿Reviewed By: Rider Osentoski
+Reviewed On: 11/25/2019
+Reviewing: Bowser.cs and BowserState.cs
+Author: Nick Armstrong
+Time Taken: 25 minutes.
+
+I think my main criticism is having AI be a simple boolean variable. I think, similar to
+how Mario has Action and Power States, Bowser difficulty could've also been a state. I can
+see why this could be tricky because we'd have AI State affecting Movement States, but I feel
+like there a couple options for this. The one I think would've been best is having
+the AI could be a state of the movement state instead of Bowser himself. That way a movement
+state that doesn't need to know about the difficulty wouldn't necessarily have to.
+Also, the difference between the WeakBowser and the AIBowser classes is just the value of
+that variable. I think that maybe some of the code from the BowserState abstract class should've
+been moved into the Bowser classes. After all, if code is shared with all the states, it could
+potentially be pulled up to the context class, depending on what it does. Then, we might not need
+the AI variable at all.
+
+Plus, just looking at the code, AI Bowser might be too hard. 20 frames (if the number means
+what I think it means) of delay between switching states seems a tad quick, but I'll have to
+actually play myself to see. Also, we could've had different attacks do different amounts of damage.
+
+Other than those criticisms, the overrall design of the code is good, and if it works, it works.

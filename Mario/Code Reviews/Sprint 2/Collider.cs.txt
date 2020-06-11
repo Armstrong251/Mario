@@ -1,0 +1,9 @@
+﻿Reviewer: Nate Turner
+Writer: Nick Armstrong
+Date: 10/15/2019
+
+Code is clean and easy to read
+Maybe condense some of the if/elseif/else statements
+Add some comments on the PointPointInterp and Point methods to clarify things
+
+~10 min

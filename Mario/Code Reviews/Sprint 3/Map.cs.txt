@@ -1,0 +1,12 @@
+FILE: Map.cs
+AUTHOR: Willem Kennedy , Zachary Mack
+REVIEWER: Nick Armstrong 
+DATE: 10/28/2019
+TIME ELAPSED: ~20min
+
+Overall I think the conversion from having to use the Monogame content pipeline to useing only c# things was genious. 
+Also throwing out the old parser and dimplifiying it was very good as well. 
+One of the only major concerns I have is that you open files and you never close them. This can be a major Issue with the reset function we are implementing. 
+I did go ahead and fix this problem by closing the file after getting all the data we needed from it. 
+I also think it was a great idea to make the spawn function generic to allow 1 function to be used for all the maps we layer in. 
+Overall I think it is much cleaner than the previous parser. Great job. 

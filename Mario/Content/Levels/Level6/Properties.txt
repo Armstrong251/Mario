@@ -1,0 +1,27 @@
+﻿{
+    'Type': 'Level',
+    'Name': '2-2',
+    'Theme': 'DarkPlains',
+    'NextLevel': 'Level7/Beginning'
+}
+$
+{
+    'Type': 'Launcher',
+    'BulletType': 'TurboBill',
+	'X':'123',
+	'Y':'11'
+}
+$
+{
+    'Type': 'Launcher',
+    'BulletType': 'TurboBill',
+	'X':'123',
+	'Y':'9'
+}
+$
+{
+    'Type': 'Launcher',
+    'BulletType': 'TurboBill',
+	'X':'123',
+	'Y':'7'
+}

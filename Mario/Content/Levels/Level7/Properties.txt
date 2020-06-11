@@ -1,0 +1,26 @@
+﻿{
+    'Type': 'Level',
+    'Name': '2-3',
+    'Theme': 'Cave',
+    'NextLevel': 'Level7/End'
+}
+$
+{
+    'Type': 'Pipe',
+    'Destination': 'Level7/Beginning',
+    'Return': false,
+    'X': 223,
+    'Y': 16,
+    'DestX': 46,
+    'DestY': 17
+}
+$
+{
+    'Type': 'Pipe',
+    'Destination': 'Level7/End',
+    'Return': false,
+    'X': 223,
+    'Y': 11,
+    'DestX': 3,
+    'DestY': 16
+}

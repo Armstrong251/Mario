@@ -1,0 +1,20 @@
+﻿
+
+Q = quit
+W = jump
+A = left 
+S = crouch
+D = Right
+Y = standard Mario
+U = Super Mario 
+I = FireMario
+O = Take damage
+L = give 99 coins
+P = pause
+T = Warp key
+//potential warps on start screen\
+{T11,T12,T13,T14 }
+{T21,T22,T23,T24 }
+{T31,T32,T33,T34 }
+
+K = gain temp star power

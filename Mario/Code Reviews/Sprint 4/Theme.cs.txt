@@ -1,0 +1,14 @@
+﻿Reviewed By: Rider Osentoski
+Reviewed On: 11/12/2019
+Reviewing: Theme.cs
+Author: Rider Osentoski
+Time Taken to Review: 10 minutes
+
+First off, yes I am reviewing my own code.
+
+So right now, Theme covers only the background elements of a level, but the actual theme covers more than that.
+To go along with the changes in BlockFactory, Themes should have the information that will let the correctly themed
+sprite to be constructed. Additionally, music and other properties of the level should stored here.
+It may also be safe to register themes during construction, removing the need for the Register method.
+Also, because this was hastily added to fix a background issue, there's not much consistency with it's use in the code.
+Some places use the class, some places use a string. It should consistently use the class.

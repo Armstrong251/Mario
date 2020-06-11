@@ -1,0 +1,11 @@
+File: ItemFactory.cs
+Author: Nick Armstrong
+Reviewer: Zachary Mack
+9/23/2019
+~10 mins
+
+1 - Enum Items names could be more descriptive. Mush could be a misleading. Could instead use more descriptive name like mushroom.
+
+2 - The code is consise and to the point. Good job.
+
+3 - Can't think of any changes I would make. 

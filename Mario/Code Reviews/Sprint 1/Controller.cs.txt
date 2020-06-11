@@ -1,0 +1,16 @@
+﻿File: Controller.cs
+Author: Willem Kennedy
+Reviewed By: Rider Osentoski
+On: 9/23/2019 at 10:00 PM
+This review to 30 minutes.
+
+Overall, the quality of the code here is good, especially in the fact that is generic, using an abstract
+class to accomplish this.
+
+The use of the ControllerManger class makes it a little confusing to navigate and I'm not sure how having it
+helps versus justconsolidating the functionality into one location.
+
+Also, the class makes use of an event system rather than using the Command Pattern, which is perfecly fine, as
+it seems to accomplish a similar effect.
+
+As for changes, I see no need to change anything yet, as it seems to be working just fine.

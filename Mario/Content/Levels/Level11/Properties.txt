@@ -1,0 +1,37 @@
+﻿{
+    'Type': 'Level',
+    'Name': '3-3',
+	'Theme': 'Castle',
+    'NextLevel': 'Level11/End'
+}
+$
+{
+    'Type': 'Launcher',
+    'BulletType': 'SuperBill',
+	'X':'97',
+	'Y':'14'
+}
+$
+{
+    'Type': 'Launcher',
+    'BulletType': 'FakeBill',
+	'X':'128',
+	'Y':'14'
+}
+$
+{
+    'Type': 'Launcher',
+    'BulletType': 'TurboBill',
+	'X':'161',
+	'Y':'14'
+}
+$
+{
+    'Type': 'Pipe',
+    'Destination': 'Level11/End',
+    'Return': false,
+    'X': 192,
+    'Y': 11,
+    'DestX': 3,
+    'DestY': 16
+}

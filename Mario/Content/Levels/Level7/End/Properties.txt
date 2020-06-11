@@ -1,0 +1,6 @@
+{
+    'Type': 'Level',
+    'Name': '1-2',
+	'Theme': 'DarkPlains',
+    'NextLevel': 'Level8'
+}

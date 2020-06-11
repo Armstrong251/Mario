@@ -1,0 +1,9 @@
+Nick Armstrong
+9/23/2019
+Sprint 1
+MarioFactory.cs
+Zach Mack
+Overall the code is very clean. Being the one who wrote the other factories besides this one
+I find the idea of just updating variables instead of numorous returns kinda cool. 
+The code is clean and I can't think of any outright changes I would make.
+~10 min not alot of code overall and pretty straitforward  

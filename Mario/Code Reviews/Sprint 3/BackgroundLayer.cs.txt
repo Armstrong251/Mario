@@ -1,0 +1,15 @@
+﻿FILE: BackgroundLayer.cs
+AUTHOR: Rider Osentoski
+REVIEWER: Zachary Mack
+DATE: 10/29/2019
+TIME ELAPSED: ~20min
+
+In general, the code in BackgroundLayer.cs is great. The code inside that method is concise and efficient. I mainly want to talk about how
+BackgroundLayer.cs is used in other files. For one thing, all the backgrounds are added in at the MarioGame.cs and not through Level.cs or
+by parsing a file. I understand why as this was added in a bit of a time crunch. We may want to either add a level config xml file, or update
+the parser to take in fields like level theme and background via the png files. This will make it easier in the future to change the background
+or theme. In addition, the backgound looks strange over jumps, as there is just blue for anything below 2 blocks. This might make people think
+there is water or destroy their immersion in the game. To fix this we could adjust the background to account for gaps, add a dirt/floor 
+background for below level 2, or we could add visible but non - interactable blocks for those locations. The last one could struggle, if Mario
+goes behind the blocks, or if the blocks arent clearly defined as being unable to land on. Overall, though the file itself looks great! Just
+keep these things in mind as you move forward.

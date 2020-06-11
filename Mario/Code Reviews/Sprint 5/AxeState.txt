@@ -1,0 +1,8 @@
+Reviewer: Willem Kennedy
+Author: Zachary Mack
+Date: 2019-11-16
+Time reviewing: ~10min
+
+Generally the code works fine but it's a bit difficult to understand - why is StoredItemCount being used? What does StoredItemCount do here?
+
+In addition, all of the copy-pasted code could have been in a loop.

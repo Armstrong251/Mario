@@ -1,0 +1,9 @@
+File: LevelReader.cs
+Author: Zachary Mack
+Reviewer: Willem Kennedy
+Date: 2019-10-07
+
+1. You don't have to use .Equals for objects in C#
+2. Instead of doing new Color(255, 255, 255) just use Color.White since it's easier to read.
+3. If you use a color that isn't just Color.White, Color.Red, etc, define a variable for it so we know what color it is
+    so do like static readonly Color DARKPURPLE = new Color(100, 0, 50) or whatever

@@ -1,0 +1,96 @@
+﻿Reviewed By: Rider Osentoski
+Reviewed On: 10/15/2019
+Reviewing: The Entire Project
+Author: Everyone
+Time Taken: 2 and a half hours
+
+I'm just going to be honest here and let my feelings be known:
+As it is right now, I think our code is a mess. This document will why I believe
+this to be the case, as well as how I believe we, as a team, can improve going forward.
+
+Entities:
+
+So, right now, Entities are being created by factories, and there isn't anything inherently
+wrong with that conceptually, but we aren't really going about it the right way.
+Right now, we have separate factories for each subtype of Entity (Blocks, Monsters, Mario, etc.),
+but that's doesn't help us solve the problem factories are supposed to solve, which was to be able to
+easily change the level theme. Any factories we make should produce each kind of entity, only differing
+by level theme. Of course, since theme, for the most part, is only visual, factories should actually only
+produce Sprites, not Entities. Of course, this all depends on how we want to do it. We might even be able to
+do both kinds of Factory.
+However, even though factories produce and return Entities, the return value is never actually being used.
+The entity just magically gets put into the list of Entities in the Level, seemingly through Entity.Delegate.
+Just how confusing it was to figure out leads me to believe that this is not good design. The level should
+be able to add Entities itself, not depend on the Entity class to do it on it's behalf.
+Also, the way we're dealing with States is very weird. There is no need for an entire class dedicated to
+holding the states of an object. It's not doing anything special. In fact, the Entities which have states,
+don't actually need to know what state they're in, or what states are available to them. They just delegate
+their behavior to its current state as needed. The state themselves can handle any necessary transitions. On
+a related note, why do states return an enumeration that corresponds to themselves for some of their methods.
+The context of the state doesn't need to know about it. Like I said, the state can handle swapping itself
+out for a new one.
+
+Events:
+
+The use of Events throughout our code is incredible pervasive. I think I can sum up
+my problems with this simply: Not everything should be an event. In my mind, events
+are things that occur outside the program that it can react to. A key press, a mouse
+click; those are events. Mario crouching, A block getting hit; those are not. They all
+occur within the program and therefore should not be events. Of course, I could be
+misunderstanding the purpose of these Events and they could be just for debugging,
+but there are better ways to do that. In either case, they should eventually be
+deprecated.
+
+Level:
+
+I have one simple complaint about how levels are loaded in: While there is nothing inherently wrong
+with using an image to load in the level, they way we are actually loading in the level isn't correct.
+During the code review, when we asked about doing this, he mentioned we would need to load in the images
+in a different way from the spritesheets. See, the way the Monogame Content Pipeline works is that
+it converts all of the images to a standard format during compile time. This means we need to recompile
+each time we want to change the level. While this is probably accurate to how it was during the development
+of Super Mario Bros., the PBI states:
+"The Tile Map Definition MUST be editable and read/parsed at runtime for gameplay without compilation.​" Therefore,
+we are doing this incorrectly. We need to somehow figure out a different method of loading in the level. I'm sure
+the C# Standard Library has some kind of image processing functions.
+
+Commands:
+
+We are not using the Command pattern correctly. The Command pattern is relatively simple:
+Commands have one method: Execute. No parameters. no return value. Each type of command then
+defines what type of object that will have its methods run by Execute() (the receiver). Right now,
+Commands only have an Invoke method, and only accept objects of type IEntity. This severly limits
+the use of Commands. Plus, the way there used right now, they're no different from basic method calls.
+The point of the Command is so we can dynamically store and execute method calls at a later time, like
+via a button press, or in a queue.
+
+Collisions:
+
+At a quick glance, nothing seems particularly wrong with the Collider, other than the high amount
+of Interp methods, which are private anyway so it shouldn't be too big a deal without actually
+looking into the implementations of them. However, I will say one thing: if we somehow managed to
+not follow the collision strategy that was given right to us on the slides, I will be severely
+dissappointed.
+
+Communication and Teamwork:
+
+In spite of all the problems I have with our code, the thing I am most dissappointed about is our ability
+to work as a team. We have not met outside of class once. Commit messages are unclear as to their commit's
+purpose. Almost all of our code is completely uncommented. Ultimately, this means there are many in the
+code that I don't understand what they do or why they are there (what even is Entity.Dependent?).
+But that's not even the start.
+Despite receiving feedback on this for Sprint 1, our tasks in DevOps are still ill-described, some
+with no description at all. Plus, not all the code being written has a corresponding task it is accomplishing.
+For example, the Collision Detection PBI does not actually have a single task relating to detecting
+collisions, almost all visual tasks. Additionally, some people are working on things outside of their
+assigned tasks without letting others know, leading to changes being made without the person assigned
+to work on that task even realizing what happened. If someone wants something to be changed about
+a piece of code that they were not assigned to work, they should let the person who was assigned
+to work on it know, and not proceed to do it themselves with asking first. Ultimately, I think it's
+our lack of communication that caused the problems I have in the first place.
+
+
+Look, I just want this project to succeed, and I want to help it succeed, but
+I just can't do that in its current state. And if we don't resolve these issues soon, together
+as a team, they're just going to keep on building on top of each other,
+and it will only get harder and harder.

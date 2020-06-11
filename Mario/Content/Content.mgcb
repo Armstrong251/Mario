@@ -1,0 +1,814 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:Windows
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin Levels/Level1/BlockMap.png
+/copy:Levels/Level1/BlockMap.png
+
+#begin Levels/Level1/CheckpointMap.png
+/copy:Levels/Level1/CheckpointMap.png
+
+#begin Levels/Level1/CPMap.png
+/copy:Levels/Level1/CPMap.png
+
+#begin Levels/Level1/EnemyMap.png
+/copy:Levels/Level1/EnemyMap.png
+
+#begin Levels/Level1/PipeRoom/BlockMap.png
+/copy:Levels/Level1/PipeRoom/BlockMap.png
+
+#begin Levels/Level1/PipeRoom/CPMap.png
+/copy:Levels/Level1/PipeRoom/CPMap.png
+
+#begin Levels/Level1/PipeRoom/Properties.txt
+/copy:Levels/Level1/PipeRoom/Properties.txt
+
+#begin Levels/Level1/PipeRoom/SpawnMap.png
+/copy:Levels/Level1/PipeRoom/SpawnMap.png
+
+#begin Levels/Level1/Properties.txt
+/copy:Levels/Level1/Properties.txt
+
+#begin Levels/Level1/SpawnMap.png
+/copy:Levels/Level1/SpawnMap.png
+
+#begin Levels/Level10/Background.png
+/copy:Levels/Level10/Background.png
+
+#begin Levels/Level10/BlockMap.png
+/copy:Levels/Level10/BlockMap.png
+
+#begin Levels/Level10/CPMap.png
+/copy:Levels/Level10/CPMap.png
+
+#begin Levels/Level10/EnemyMap.png
+/copy:Levels/Level10/EnemyMap.png
+
+#begin Levels/Level10/Properties.txt
+/copy:Levels/Level10/Properties.txt
+
+#begin Levels/Level10/SpawnMap.png
+/copy:Levels/Level10/SpawnMap.png
+
+#begin Levels/Level11/Beginning/BlockMap.png
+/copy:Levels/Level11/Beginning/BlockMap.png
+
+#begin Levels/Level11/Beginning/Properties.txt
+/copy:Levels/Level11/Beginning/Properties.txt
+
+#begin Levels/Level11/Beginning/SpawnMap.png
+/copy:Levels/Level11/Beginning/SpawnMap.png
+
+#begin Levels/Level11/BlockMap.png
+/copy:Levels/Level11/BlockMap.png
+
+#begin Levels/Level11/CPMap.png
+/copy:Levels/Level11/CPMap.png
+
+#begin Levels/Level11/End/BlockMap.png
+/copy:Levels/Level11/End/BlockMap.png
+
+#begin Levels/Level11/End/Properties.txt
+/copy:Levels/Level11/End/Properties.txt
+
+#begin Levels/Level11/End/SpawnMap.png
+/copy:Levels/Level11/End/SpawnMap.png
+
+#begin Levels/Level11/EnemyMap.png
+/copy:Levels/Level11/EnemyMap.png
+
+#begin Levels/Level11/Properties.txt
+/copy:Levels/Level11/Properties.txt
+
+#begin Levels/Level11/SpawnMap.png
+/copy:Levels/Level11/SpawnMap.png
+
+#begin Levels/Level12/Background.png
+/copy:Levels/Level12/Background.png
+
+#begin Levels/Level12/BlockMap.png
+/copy:Levels/Level12/BlockMap.png
+
+#begin Levels/Level12/CPMap.png
+/copy:Levels/Level12/CPMap.png
+
+#begin Levels/Level12/EnemyMap.png
+/copy:Levels/Level12/EnemyMap.png
+
+#begin Levels/Level12/Properties.txt
+/copy:Levels/Level12/Properties.txt
+
+#begin Levels/Level12/SpawnMap.png
+/copy:Levels/Level12/SpawnMap.png
+
+#begin Levels/Level2/Beginning/BlockMap.png
+/copy:Levels/Level2/Beginning/BlockMap.png
+
+#begin Levels/Level2/Beginning/Properties.txt
+/copy:Levels/Level2/Beginning/Properties.txt
+
+#begin Levels/Level2/Beginning/SpawnMap.png
+/copy:Levels/Level2/Beginning/SpawnMap.png
+
+#begin Levels/Level2/BlockMap.png
+/copy:Levels/Level2/BlockMap.png
+
+#begin Levels/Level2/CheckpointMap.png
+/copy:Levels/Level2/CheckpointMap.png
+
+#begin Levels/Level2/CPMap.png
+/copy:Levels/Level2/CPMap.png
+
+#begin Levels/Level2/End/BlockMap.png
+/copy:Levels/Level2/End/BlockMap.png
+
+#begin Levels/Level2/End/Properties.txt
+/copy:Levels/Level2/End/Properties.txt
+
+#begin Levels/Level2/End/SpawnMap.png
+/copy:Levels/Level2/End/SpawnMap.png
+
+#begin Levels/Level2/EnemyMap.png
+/copy:Levels/Level2/EnemyMap.png
+
+#begin Levels/Level2/PipeRoom/BlockMap.png
+/copy:Levels/Level2/PipeRoom/BlockMap.png
+
+#begin Levels/Level2/PipeRoom/CPMap.png
+/copy:Levels/Level2/PipeRoom/CPMap.png
+
+#begin Levels/Level2/PipeRoom/Properties.txt
+/copy:Levels/Level2/PipeRoom/Properties.txt
+
+#begin Levels/Level2/PipeRoom/SpawnMap.png
+/copy:Levels/Level2/PipeRoom/SpawnMap.png
+
+#begin Levels/Level2/Properties.txt
+/copy:Levels/Level2/Properties.txt
+
+#begin Levels/Level2/SpawnMap.png
+/copy:Levels/Level2/SpawnMap.png
+
+#begin Levels/Level3/BlockMap.png
+/copy:Levels/Level3/BlockMap.png
+
+#begin Levels/Level3/CPMap.png
+/copy:Levels/Level3/CPMap.png
+
+#begin Levels/Level3/EnemyMap.png
+/copy:Levels/Level3/EnemyMap.png
+
+#begin Levels/Level3/Properties.txt
+/copy:Levels/Level3/Properties.txt
+
+#begin Levels/Level3/SpawnMap.png
+/copy:Levels/Level3/SpawnMap.png
+
+#begin Levels/Level4/BlockMap.png
+/copy:Levels/Level4/BlockMap.png
+
+#begin Levels/Level4/CPMap.png
+/copy:Levels/Level4/CPMap.png
+
+#begin Levels/Level4/EnemyMap.png
+/copy:Levels/Level4/EnemyMap.png
+
+#begin Levels/Level4/Properties.txt
+/copy:Levels/Level4/Properties.txt
+
+#begin Levels/Level4/SpawnMap.png
+/copy:Levels/Level4/SpawnMap.png
+
+#begin Levels/Level5/BlockMap.png
+/copy:Levels/Level5/BlockMap.png
+
+#begin Levels/Level5/CPMap.png
+/copy:Levels/Level5/CPMap.png
+
+#begin Levels/Level5/EnemyMap.png
+/copy:Levels/Level5/EnemyMap.png
+
+#begin Levels/Level6/BlockMap.png
+/copy:Levels/Level6/BlockMap.png
+
+#begin Levels/Level6/CPMap.png
+/copy:Levels/Level6/CPMap.png
+
+#begin Levels/Level6/EnemyMap.png
+/copy:Levels/Level6/EnemyMap.png
+
+#begin Levels/Level6/Properties.txt
+/copy:Levels/Level6/Properties.txt
+
+#begin Levels/Level6/SpawnMap.png
+/copy:Levels/Level6/SpawnMap.png
+
+#begin Levels/Level7/Background.png
+/copy:Levels/Level7/Background.png
+
+#begin Levels/Level7/Beginning/Background.png
+/copy:Levels/Level7/Beginning/Background.png
+
+#begin Levels/Level7/Beginning/BlockMap.png
+/copy:Levels/Level7/Beginning/BlockMap.png
+
+#begin Levels/Level7/Beginning/CPMap.png
+/copy:Levels/Level7/Beginning/CPMap.png
+
+#begin Levels/Level7/Beginning/EnemyMap.png
+/copy:Levels/Level7/Beginning/EnemyMap.png
+
+#begin Levels/Level7/Beginning/Properties.txt
+/copy:Levels/Level7/Beginning/Properties.txt
+
+#begin Levels/Level7/Beginning/SpawnMap.png
+/copy:Levels/Level7/Beginning/SpawnMap.png
+
+#begin Levels/Level7/BlockMap.png
+/copy:Levels/Level7/BlockMap.png
+
+#begin Levels/Level7/CPMap.png
+/copy:Levels/Level7/CPMap.png
+
+#begin Levels/Level7/End/BlockMap.png
+/copy:Levels/Level7/End/BlockMap.png
+
+#begin Levels/Level7/End/Properties.txt
+/copy:Levels/Level7/End/Properties.txt
+
+#begin Levels/Level7/End/SpawnMap.png
+/copy:Levels/Level7/End/SpawnMap.png
+
+#begin Levels/Level7/EnemyMap.png
+/copy:Levels/Level7/EnemyMap.png
+
+#begin Levels/Level7/Properties.txt
+/copy:Levels/Level7/Properties.txt
+
+#begin Levels/Level7/SpawnMap.png
+/copy:Levels/Level7/SpawnMap.png
+
+#begin Levels/Level8/Background.png
+/copy:Levels/Level8/Background.png
+
+#begin Levels/Level8/BlockMap.png
+/copy:Levels/Level8/BlockMap.png
+
+#begin Levels/Level8/CPMap.png
+/copy:Levels/Level8/CPMap.png
+
+#begin Levels/Level8/EnemyMap.png
+/copy:Levels/Level8/EnemyMap.png
+
+#begin Levels/Level8/Properties.txt
+/copy:Levels/Level8/Properties.txt
+
+#begin Levels/Level8/SpawnMap.png
+/copy:Levels/Level8/SpawnMap.png
+
+#begin Levels/Level9/Background.png
+/copy:Levels/Level9/Background.png
+
+#begin Levels/Level9/BlockMap.png
+/copy:Levels/Level9/BlockMap.png
+
+#begin Levels/Level9/CPMap.png
+/copy:Levels/Level9/CPMap.png
+
+#begin Levels/Level9/EnemyMap.png
+/copy:Levels/Level9/EnemyMap.png
+
+#begin Levels/Level9/Properties.txt
+/copy:Levels/Level9/Properties.txt
+
+#begin Levels/Level9/SpawnMap.png
+/copy:Levels/Level9/SpawnMap.png
+
+#begin MarioFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:MarioFont.spritefont
+
+#begin Music/02-underworld.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Music/02-underworld.mp3
+
+#begin Music/04-castle.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Music/04-castle.mp3
+
+#begin Music/18-hurry-overworld-.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Music/18-hurry-overworld-.mp3
+
+#begin Music/galaxystep.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Music/galaxystep.mp3
+
+#begin Music/MainSong.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Music/MainSong.mp3
+
+#begin SoundEffects/1-Down.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/1-Down.mp3
+
+#begin SoundEffects/1-Up.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/1-Up.mp3
+
+#begin SoundEffects/breakblock.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/breakblock.wav
+
+#begin SoundEffects/bump.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/bump.wav
+
+#begin SoundEffects/coin.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/coin.wav
+
+#begin SoundEffects/fireball.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/fireball.wav
+
+#begin SoundEffects/flagpole.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/flagpole.wav
+
+#begin SoundEffects/GameOver.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/GameOver.mp3
+
+#begin SoundEffects/Hurry.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/Hurry.mp3
+
+#begin SoundEffects/jump-small.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/jump-small.wav
+
+#begin SoundEffects/jump-super.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/jump-super.wav
+
+#begin SoundEffects/pause.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/pause.wav
+
+#begin SoundEffects/pipe.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/pipe.wav
+
+#begin SoundEffects/powerup.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/powerup.wav
+
+#begin SoundEffects/powerup_appears.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/powerup_appears.wav
+
+#begin SoundEffects/start.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/start.wav
+
+#begin SoundEffects/stomp.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/stomp.wav
+
+#begin SoundEffects/WorldClear.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:SoundEffects/WorldClear.mp3
+
+#begin Sprites/AdditionalItems.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/AdditionalItems.png
+
+#begin Sprites/backgrounds2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/backgrounds2.png
+
+#begin Sprites/BanzaiBillL.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/BanzaiBillL.png
+
+#begin Sprites/Blank.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Blank.png
+
+#begin Sprites/BooChase.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/BooChase.png
+
+#begin Sprites/BooHide.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/BooHide.png
+
+#begin Sprites/Castle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Castle.png
+
+#begin Sprites/coin_icon.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/coin_icon.png
+
+#begin Sprites/Enimies2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Enimies2.png
+
+#begin Sprites/fireBall.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/fireBall.png
+
+#begin Sprites/itemsSheet.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/itemsSheet.png
+
+#begin Sprites/MarioFace.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/MarioFace.png
+
+#begin Sprites/marioSheet3.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/marioSheet3.png
+
+#begin Sprites/MovingPlatformSmall.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/MovingPlatformSmall.png
+
+#begin Sprites/PipesandBlocks.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/PipesandBlocks.png
+
+#begin Sprites/Points/100.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Points/100.png
+
+#begin Sprites/Points/1000.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Points/1000.png
+
+#begin Sprites/Points/1up.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Points/1up.png
+
+#begin Sprites/Points/200.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Points/200.png
+
+#begin Sprites/Points/2000.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Points/2000.png
+
+#begin Sprites/Points/400.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Points/400.png
+
+#begin Sprites/Points/4000.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Points/4000.png
+
+#begin Sprites/Points/500.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Points/500.png
+
+#begin Sprites/Points/5000.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Points/5000.png
+
+#begin Sprites/Points/800.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Points/800.png
+
+#begin Sprites/Points/8000.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Points/8000.png
+
+#begin Sprites/QuestionBlock.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/QuestionBlock.png
+
+#begin Sprites/SpaceBackground.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/SpaceBackground.png
+
+#begin Sprites/StarMario.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/StarMario.png
+
+#begin Sprites/TextBox.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/TextBox.png
+
+#begin TitleScreen.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:TitleScreen.png
+

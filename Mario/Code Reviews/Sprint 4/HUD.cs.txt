@@ -1,0 +1,8 @@
+Reviewer: Nate Turner
+Author: Rider Osentoski
+Date: 11/12/2019
+Time Taken: ~10 min
+
+Could consense DrawText() and DrawIcons() down to one Draw() with conditions/switch cases.
+	Both methods take in Spritebatch and work under the condition of visibility
+	Should the HUD be visible no matter what?

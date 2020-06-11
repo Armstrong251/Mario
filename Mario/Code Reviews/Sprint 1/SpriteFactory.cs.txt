@@ -1,0 +1,10 @@
+﻿File: SpriteFactory.cs
+Author: Nick Armstrong
+Reviewer: Willem Kennedy
+
+1 - use proper capitalization in the file name
+
+2 - we're going to have a separate folder for each entity type so we might as well
+	put each factory into its own file so we don't have a monstrously huge file.
+
+3 - remember that C# naming convention for fields is camelCase

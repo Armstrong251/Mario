@@ -1,0 +1,21 @@
+﻿File: BlockStates.cs
+Author: Rider Osentoski
+Reviewer: Zachary Mack
+9/23/2019
+~15 mins
+
+1 - On line 52 you comment out code saying, "Commenting these out until I need them." You don't specify when this might be the case.
+
+1.5 - Good Specific comment on line 76 hypothesizing what you might do with the code later.
+
+2 - In general, it seems like most comments have a purpose that is informative to future goals.
+
+3 - Some of the comments, particularly the ones over the states, seem unnecessary, due to naming conventions.
+
+4 - I would consider separating the class BlockState into its own file for more clear organization.
+
+5 - Why does hidden state inherit from question state? Doesn't bumping into hidden reveal a brick state or used state? (I might be wrong)
+
+6 - I think the TODO is done but still exists (I might be wrong)
+
+7 - So far so good. The code itself seemed fine. Mainly the comments could be improved or eliminated. Fixing those could make your code neater to read.
